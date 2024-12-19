@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minha Gift Shop</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        /* General Styling */
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #ffe6f0;
+            color: #5a295e;
+            transition: all 0.3s ease-in-out;
+        }
+
+        header {
+            background: linear-gradient(45deg, #ff85a2, #ffabc4);
+            color: white;
+            padding: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+        }
+
+        .btn {
+            border-radius: 30px;
+        }
+
+        .btn-light {
+            background-color: #ff85a2;
+            color: white;
+            border: none;
+        }
+
+        .btn-light:hover {
+            background-color: #e36d89;
+        }
+
+        .container {
+            padding-top: 20px;
+            padding-bottom: 50px;
+        }
+
+        h1, h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        /* Card Styling */
+        .card {
+            border: none;
+            border-radius: 15px;
+            overflow: hidden;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+        }
+
+        .card img {
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .card-title {
+            font-size: 1.5rem;
+            color: #ff5a8a;
+        }
+
+        .btn-primary {
+            background-color: #ff85a2;
+            border: none;
+        }
+
+        .btn-primary:hover {
+            background-color: #e36d89;
+        }
+
+        .btn-success {
+            background-color: #ff5a8a;
+            border: none;
+        }
+
+        .btn-success:hover {
+            background-color: #e34b78;
+        }
+
+        /* Animations */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: scale(0.9);
+            }
+            to {
+                opacity: 1;
+                transform: scale(1);
+            }
+        }
+
+        .card {
+            animation: fadeIn 0.6s ease-in-out;
+        }
+
+        /* Dark Mode Styling */
+        body.dark-mode {
+            background-color: #2c2c2c;
+            color: #d4d4d4;
+        }
+
+        body.dark-mode .card {
+            background-color: #3e3e3e;
+            border: 1px solid #555;
+        }
+
+        body.dark-mode .btn-primary {
+            background-color: #bb86fc;
+            border-color: #bb86fc;
+        }
+
+        body.dark-mode .btn-success {
+            background-color: #03dac6;
+            border-color: #03dac6;
+        }
+
+        body.dark-mode .btn-light {
+            background-color: #555;
+            color: #d4d4d4;
+        }
+        /* Basic button styling */
+        /* Simple, dark button style */
+.btn-dark {
+    background-color: #a200ff;
+    color: white;
+    padding: 12px 30px;
+    font-size: 16px;
+    border: none;
+    border-radius: 50px;
+    box-shadow: 12px 12px 10px rgba(0, 0, 0, 0.2);
+    text-transform: uppercase;
+    transition: background-color 0.3s ease;
+}
+
+/* Dark button hover effect */
+.btn-dark:hover {
+    background-color: #c0272f;
+}
+
+/* Optional: Add a focus effect for accessibility */
+.btn-dark:focus {
+    outline: none;
+    box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.5);
+}
+
+
+    </style>
+</head>
+<body>
+    <header class="d-flex justify-content-between align-items-center p-3 bg-light shadow-sm">
+        <h1 class="mb-0">Minha Gift Shop</h1>
+        <div class="d-flex gap-3">
+            <a href="index.html" class="btn btn-dark">Home</a>
+            
+        </div>
+    </header>
+    
+    
+    
+    
+
+    <div class="container">
+        <h1>Our Best Gifts</h1>
+
+        <!-- Products -->
+        <div class="col-md-4 mb-4">
+            <div class="card">
+                <img src="images/quran.jpg" class="card-img-top" alt="Gift 1">
+                <div class="card-body">
+                    <h5 class="card-title">Gift for Kids</h5>
+                    <p class="card-text">Adorable plush toys and creative play kits for kids.</p>
+                    <p class="card-text"><strong>Price:</strong> $20</p>
+                    <a href="https://www.facebook.com/share/p/MUrWSmSVoJtbhiMX/" class="btn btn-primary">Details</a> <!-- Link to details page -->
+                    <a href="https://www.facebook.com/profile.php?id=100090521202321" class="btn btn-success">Order</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 mb-4">
+            <div class="card">
+                <img src="images/led.jpg" class="card-img-top" alt="Gift 2">
+                <div class="card-body">
+                    <h5 class="card-title">Gift for Friends</h5>
+                    <p class="card-text">Unique mugs, journals, and custom T-shirts for friends.</p>
+                    <p class="card-text"><strong>Price:</strong> $30</p>
+                    <a href="https://www.facebook.com/share/p/vJMr45zAyxEdtm38/" class="btn btn-primary">Details</a> <!-- Link to details page -->
+                    <a href="https://www.facebook.com/profile.php?id=100090521202321" class="btn btn-success">Order</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 mb-4">
+            <div class="card">
+                <img src="images/quran1.jpg" class="card-img-top" alt="Gift 3">
+                <div class="card-body">
+                    <h5 class="card-title">Gift for Friends</h5>
+                    <p class="card-text">Unique mugs, journals, and custom T-shirts for friends.</p>
+                    <p class="card-text"><strong>Price:</strong> $30</p>
+                    <a href="https://www.facebook.com/share/p/oKsYP3J8uzrNEUJx/" class="btn btn-primary">Details</a> <!-- Link to details page -->
+                    <a href="https://www.facebook.com/profile.php?id=100090521202321" class="btn btn-success">Order</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 mb-4">
+            <div class="card">
+                <img src="images/drawing.jpg" class="card-img-top" alt="Gift 3">
+                <div class="card-body">
+                    <h5 class="card-title">Gift for Family</h5>
+                    <p class="card-text">Elegant photo frames, home decor, and more for family.</p>
+                    <p class="card-text"><strong>Price:</strong> $50</p>
+                    <a href="https://www.facebook.com/share/p/Uw4jAycQyjMtD4iC/" class="btn btn-primary">Details</a> <!-- Link to details page -->
+                    <a href="https://www.facebook.com/profile.php?id=100090521202321" class="btn btn-success">Order</a>
+                </div>
+            </div>
+        </div>
+        
+        
+        </div>
+        
+    </div>
+
+    <script>
+        function addToCart(gig, price) {
+            let cart = JSON.parse(localStorage.getItem('cart')) || [];
+            cart.push({ gig, price });
+            localStorage.setItem('cart', JSON.stringify(cart));
+            alert(gig + ' added to cart!');
+        }
+
+        document.getElementById('toggle-dark-mode').addEventListener('click', function() {
+            document.body.classList.toggle('dark-mode');
+        });
+        function viewDetails(giftName) {
+    let url;
+    // Define URLs based on the gift name (you can replace these URLs with actual links)
+    if (giftName === 'Gift for Kids') {
+        url = 'https://example.com/gift-for-kids'; // Replace with the actual URL for "Gift for Kids"
+    } else if (giftName === 'Gift for Friends') {
+        url = 'https://example.com/gift-for-friends'; // Replace with the actual URL for "Gift for Friends"
+    } else if (giftName === 'Gift for Family') {
+        url = 'https://example.com/gift-for-family'; // Replace with the actual URL for "Gift for Family"
+    }
+
+    // Redirect to the URL
+    if (url) {
+        window.location.href = url;
+    }
+}
+
+    </script>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
